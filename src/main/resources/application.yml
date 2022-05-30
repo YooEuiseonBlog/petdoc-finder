@@ -1,5 +1,10 @@
 server: 
   port: 8090
+  servlet:
+    encoding: #encoding utf-8설정
+      charset: UTF-8
+      enabled: true
+      force: true
   # application.properties
 spring:
   mvc:
@@ -22,7 +27,7 @@ spring:
       enabled: true
       max-file-size: 100MB
       max-request-size: 100MB
-      
+ 
 mybatis:
   type-aliases-package: com.team1.health.vo #mybatis에서 패키지 생략 할 수 있도록 설정
   mapper-locations: mapper/*Mapper.xml #쿼리문 경로 지정x 
